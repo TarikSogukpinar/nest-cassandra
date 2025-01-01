@@ -7,9 +7,9 @@ export class CassandraService implements OnModuleInit, OnModuleDestroy {
 
     constructor() {
         this.client = new Client({
-            contactPoints: ['127.0.0.1'], // Cassandra'nın çalıştığı adres
-            localDataCenter: 'datacenter1', // Cassandra için tanımlanan datacenter
-            keyspace: 'example_keyspace',   // Cassandra'daki keyspace adı
+            contactPoints: ['127.0.0.1'],
+            localDataCenter: 'datacenter1',
+            keyspace: 'example_keyspace',
         });
     }
 
